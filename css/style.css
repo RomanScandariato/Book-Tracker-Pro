@@ -1,0 +1,65 @@
+html, body {
+    height: 100%
+}
+
+header {
+    text-align: center !important;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+text {
+    color: midnightblue;
+
+
+}
+
+main h3 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+body button {
+    display: block;
+        width: 200px;
+        margin: 0 auto;
+
+        margin-bottom: 15px;
+}
+
+
+.article-container {
+    /* Display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 70%;  */
+
+}
+
+.nav {
+    --bs-nav-link-color: black;
+}
+
+.box {
+    background-color: cadetblue;
+    width: 300px;
+    border: 3px solid black;
+    padding: 20px;
+    margin: 35px;
+
+}
+
+
+footer{
+    text-align: center;
+    padding: 20px 0;
+    width: 100%
+}
