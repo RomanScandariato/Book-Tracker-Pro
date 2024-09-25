@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tracker Pro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<header class="p-5" style="width: 100%;">
+    <h1 style="text-align: center;">Book Tracker Pro</h1>
+
+
+</header>
+
+
+<body>
+    <nav>
+        <ul class="nav justify-content-center border border-info border border-3">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#addbook">Add Book</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#allbooks">All Books</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h3 class="mb-3">Add Book</h3>
+
+
+        <!-- <p class="badge text-bg-primary text-wrap" style="width: 6rem;">Author:</p>
+        <input type="text" id="author-input" placeholder="Author:">
+        <p class="badge text-bg-primary text-wrap" style="width: 6rem;">Title:</p>
+        <input type="text" id="title-input" placeholder="Title:"> -->
+
+        <!-- <section class="output"> -->
+        <!-- Rating section -->
+        <!-- </section> -->
+    </main>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#book-modal">
+        Book Information
+    </button>
+    <!--     
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-book">
+        Add New Book
+    </button> -->
+    <button id="book-info" class="btn btn-primary">
+        Add New Book
+    </button>
+
+
+
+    <!-- Modal for pop-up-->
+    <div class="modal fade" id="book-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Book Info</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p class="modal-title">Title: </p>
+                    <p class="modal-author">Author: </p>
+                    <p class="modal-rating">Rating: </p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" id="book-info" class="btn btn-primary">Save changes</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="article-container">
+        <article class="border border-dark p-2 rounded-2 text-black-50 mb-3">
+            <h3>Title: Rising Star</h3>
+            <p>Author: Gerald Tarris</p>
+            <p>Rating: 4</p>
+        </article>
+        <article class="border border-dark p-2 rounded-2 text-black-50 mb-3">
+            <h3>Title: Wishing Tree</h3>
+            <p>Author: Cindy Clawfer</p>
+            <p>Rating: 2</p>
+        </article>
+        <article class="border border-dark p-2 rounded-2 text-black-50 mb-3">
+            <h3>Title: The Missing Link</h3>
+            <p>Author: Jada Weiser</p>
+            <p>Rating: 3</p>
+        </article>
+        <article class="border border-dark p-2 rounded-2 text-black-50 mb-3">
+            <h3>Title: Claw</h3>
+            <p>Author: Terry Holder</p>
+            <p>Rating: 1</p>
+        </article>
+        <article class="border border-dark p-2 rounded-2 text-black-50 mb-3">
+            <h3>Title: The Others</h3>
+            <p>Author: Patrick Heissen</p>
+            <p>Rating: 5</p>
+        </article>
+        <article class="border border-dark p-2 rounded-2 text-black-50 mb-3">
+            <h3>Title: Clearing For All</h3>
+            <p>Author: Amanda Ross</p>
+            <p>Rating: 2</p>
+        </article>
+    </div>
+
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Book Tracker Pro</p>
+        <p>Dev & Design by Rita Aponte, Roman Scandariato, Kandyce Mbua, Adonis Zepeda</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
+
+<!-- Tests the box class    
+    <div class = "box">
+        <h3>Test</h3>
+    </div> -->
