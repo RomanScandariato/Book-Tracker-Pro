@@ -17,10 +17,10 @@ function bookInfo() {
     let askRating = prompt("How would you rate this book?")
     console.log(askRating);
 
-    if(askRating >= 5 && !< 1){
+    // if(askRating >= 5 && !< 1){
         
 
-    }
+    // }
 
 }
 
