@@ -17,17 +17,11 @@ function bookInfo() {
     let askRating = prompt("How would you rate this book?")
     console.log(askRating);
 
-<<<<<<< HEAD
-    // if(askRating >= 5 && !< 1){
-=======
     if(askRating <= 5 && askRating >= 1){
->>>>>>> da016600ee995e7604dcb9a7f5935010e2e79f34
         
 
-    // }
+    }
 
 }
 
 addBook.addEventListener('click', bookInfo);
-
-
