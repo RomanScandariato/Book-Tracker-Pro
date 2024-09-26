@@ -7,7 +7,6 @@ const addModal = document.querySelector('#add-modal');
 /*FUNCTIONS*/
 // Create a function that returns a books array from local storage by the key of books (make sure to JSON.parse the array)
 // If there is not a books array stored to local storage return an empty array
-//
 
 
 //asks for the title and author of the book
