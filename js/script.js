@@ -1,32 +1,105 @@
-//grabbing From docs
+/*
+==============
+VARIABLES
+==============
+*/
+
+//Grabbing from Docs
+const bookOutput = document.querySelector('.output');
 const addBookBtn = document.querySelector('#add-book');
-// const rating = document.querySelector('#add-rating')
 const addModal = document.querySelector('#add-modal');
+// const rating = document.querySelector('#add-rating')
 
+//Holds the book info
+const books = [];
 
-/*FUNCTIONS*/
+/*
+==============
+FUNCTIONS
+==============
+*/
+
 // Create a function that returns a books array from local storage by the key of books (make sure to JSON.parse the array)
 // If there is not a books array stored to local storage return an empty array
 
+function pageLoad() {
 
-//asks for the title and author of the book
-function addBook() {
-    const titleInput = document.querySelector('#title-input');
-    const authorInput = document.querySelector('#author-input');
-    const ratingInput = document.querySelector('#rating-input');
-    const rating = ratingInput.value;
-    console.log(titleInput.value);
-    if (rating <= 5 && rating >= 1) {
+    //Create a book object with the three properties corresponding with the three inputs above and the values
+    
+    function outputBooks(booksArray) {
+        bookOutput.innerHTML = '';
 
+        for (const bookObject of booksArray) {
+            bookOutput.insertAdjacentHTML('beforeend', `
+                <article class="border border-dark p-2 rounded-2 text-black mb-3">
+                    <h3>${bookObject.titleInput}</h3>
+                    <p>${bookObject.authorInput}</p>
+                    <p>${bookObject.rating}</p>
+                </article>
+            `);
+        }
 
     }
-    //Create a book object with the three properties corresponding with the three inputs above and the values
-    //Call function above that returns books array, store the array that it returns in a variable
-    //Push the Book object  to the books array variable 
-    //Set the local sotrage books key to the books array above (make sure to JSON.stringify the array)
+
+    //Asks for the title and author of the book
+    function addBook() {
+
+        //defined here but used up top
+        const titleInput = document.querySelector('#title-input').value;
+        const authorInput = document.querySelector('#author-input').value;
+        const ratingInput = document.querySelector('#rating-input').value;
+        const rating = parseInt(ratingInput, 10);
+
+        //checsks if rating is from 1-5
+        if (rating <= 5 && rating >= 1) {
+            const bookObject = {
+                title: titleInput,
+                author: authorInput,
+                rating: rating
+            };
+
+            //Pushes the Book object  to the books array variable
+
+            
+            books.push(bookObject);// not defined, because it is defined locally
+
+
+            bookStorage();
+            outputBooks(books);
+
+            // clearInput();
+
+            //Call function above that returns books array, store the array that it returns in a variable
+            return books;
+
+        } else {
+            alert('Rating must be between 1-5')
+        }
+    }
+
+    // function (){
+    // }
+    // books.push({
+    //     Title: titleInput,
+    //     Author: authorInput,
+    //     Rating: rating
+
+    //Set the local storage books key to the books array above (make sure to JSON.stringify the array)
+    function bookStorage() {
+        localStorage.setItem('books', JSON.stringify(books));
+    }
+
     // Clear out the inputs - IE. titleInput.value = ''
+
+    function clearInput() {
+        //this requires local storage in order to be written
+
+        localStorage.removeItem('#title-input');
+        localStorage.removeItem('#author-input');
+        localStorage.removeItem('#rating-input');
+    }
+
+    addBookBtn.addEventListener('click', addBook);
+    outputBooks(books);
 }
-
-addBookBtn.addEventListener('click', addBook);
-
-
+pageLoad();

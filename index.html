@@ -14,7 +14,7 @@
         <h1 style="text-align: center;">Book Tracker Pro</h1>
 
         <nav>
-            <ul class="nav justify-content-center border border-info border border-3">
+            <ul class="nav justify-content-center border border-primary border border-3">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#home">Home</a>
                 </li>
@@ -42,20 +42,22 @@
     </main>
 
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#book-modal">
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#book-modal">
         Book Information
-    </button>
+    </button> -->
     <!--     
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-book">
         Add New Book
     </button> -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-modal">
-        Add New Book
-    </button>
+    <div class="d-flex justify-content-center align-item-center">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-modal">
+            Add New Book
+        </button>
+    </div>
 
 
 
-    <!-- Book info Modal-->
+    <!-- Book info Modal
     <div class="modal fade" id="book-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
 
@@ -78,7 +80,7 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Add book modal -->
     <div class="modal fade" id="add-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -109,47 +111,48 @@
 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" id="add-book" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                    <button type="button" id="add-book" class="btn btn-primary" data-bs-dismiss="modal">Save
+                        changes</button>
                 </div>
 
             </div>
         </div>
     </div>
+    <section>
+        <h3 class="mb-3">All Books</h3>
+    </section>
 
-    <div class="article-container">
-        <article class="border border-dark p-2 rounded-2 text-black-50 mb-3">
+    <div class="container">    
+        <article class="border border-dark p-2 rounded-2 text-black mb-3 flex-fill text-center">
             <h3>Title: Rising Star</h3>
             <p>Author: Gerald Tarris</p>
             <p>Rating: 4</p>
         </article>
-        <article class="border border-dark p-2 rounded-2 text-black-50 mb-3">
+        <article class="border border-dark p-2 rounded-2 text-black mb-3 flex-fill text-center">
             <h3>Title: Wishing Tree</h3>
             <p>Author: Cindy Clawfer</p>
             <p>Rating: 2</p>
         </article>
-        <article class="border border-dark p-2 rounded-2 text-black-50 mb-3">
-            <h3>Title: The Missing Link</h3>
+        <article class="border border-dark p-2 rounded-2 text-black mb-3 flex-fill text-center">
+            <h3>Title: The Missing Link </h3>
             <p>Author: Jada Weiser</p>
             <p>Rating: 3</p>
         </article>
-        <article class="border border-dark p-2 rounded-2 text-black-50 mb-3">
+        <article class="border border-dark p-2 rounded-2 text-black mb-3 flex-fill text-center">
             <h3>Title: Claw</h3>
             <p>Author: Terry Holder</p>
             <p>Rating: 1</p>
         </article>
-        <article class="border border-dark p-2 rounded-2 text-black-50 mb-3">
+        <article class="border border-dark p-2 rounded-2 text-black mb-3 flex-fill text-center">
             <h3>Title: The Others</h3>
             <p>Author: Patrick Heissen</p>
             <p>Rating: 5</p>
         </article>
-        <article class="border border-dark p-2 rounded-2 text-black-50 mb-3">
+        <article class="border border-dark p-2 rounded-2 text-black mb-3 flex-fill text-center">
             <h3>Title: Clearing For All</h3>
             <p>Author: Amanda Ross</p>
-            <p>Rating: 2</p>
-        </article>
+            <p>Rating: 2</p>   
     </div>
-
-
 
     <footer>
         <p>&copy; 2024 Book Tracker Pro</p>
