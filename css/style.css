@@ -38,31 +38,26 @@ section h3 {
     margin-top: 50px;
 }
 
-.article-container {
-    Display: grid; 
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: stretch;
-    gap: 15px;
-    width: 70%; 
-    margin: 0 auto;
-}
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 80%;
+    margin: 0;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
 }
 
-
 article {
-    height: 30%;
-    width: 110%;   
+    height: auto;
+    width: 100%;   
     max-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 10px;
+    align-items: stretch;
+    padding: 10px;
+    
 }
 
 .nav {
