@@ -26,13 +26,33 @@ You're ready to develop!
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+## Adding a book 
+1. Launch the Book-Tracker-Pro application in browser
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+2. Click on "Add Book" button or navigate to the section where you can add a new book.
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+3. Fill in book Details:
+    - Enter the Title of the book in the "Title" field.
+    - Enter the author's name in the "Author" field.
+    - Provide a rating for the book in the "Rating" field (1 to 5 stars).
+
+4. Save the Book:
+    - Click the "Save" button to add to your book list.
+
+## Viewing Books
+1. Open the Application in your browser
+
+2. Navigate to the Book List:
+    -The list of books will display in main page 
+
+3. Browse your Books:
+    -Scroll throught the list to see the books you have added, along with their details.
+
+
+## Example / Image
+
+![Adding a Book](assets/Image.png)
+![Viewing a Book](assets/booksimage.png)
 
 ## Credits
 
